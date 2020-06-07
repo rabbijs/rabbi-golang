@@ -14,7 +14,7 @@ type Actor struct {
   Exchange string
 }
 
-func (a Actor) Start(consume func(message amqp.Delivery)) {
+func (a Actor) Start(consume func(ch *amqp.Channel, message amqp.Delivery)) {
 
   godotenv.Load()
 
@@ -54,7 +54,7 @@ func (a Actor) Start(consume func(message amqp.Delivery)) {
 
   for msg := range consumer {
 
-    go consume(msg)
+    go consume(channel, msg)
 
   }
 
