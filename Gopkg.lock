@@ -1,0 +1,19 @@
+memo = "6eef977167e07027e304ddf717d422910c505ae1de2ceb13a8959a495be71706"
+
+[[projects]]
+  name = "github.com/creasty/defaults"
+  packages = ["."]
+  revision = "edf4f6a95a3223dfff4eff2c404103e756fef68d"
+  version = "v1.3.0"
+
+[[projects]]
+  name = "github.com/joho/godotenv"
+  packages = ["."]
+  revision = "23d116af351c84513e1946b527c88823e476be13"
+  version = "v1.3.0"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/streadway/amqp"
+  packages = ["."]
+  revision = "1c71cc93ed716f9a6f4c2ae8955c25f9176d9f19"
